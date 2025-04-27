@@ -1,4 +1,4 @@
-%h1 {
+%heading-1 {
   font-weight: 900;
   line-height: 130%;
   color: $c-white;
@@ -10,7 +10,7 @@
   color: $c-text-gray;
 }
 
-%text--blue {
+%text-blue {
   font-weight: normal;
   color: $c-contrast-blue;
 }
@@ -60,11 +60,11 @@
   animation: fade $transition-time;
 
   @keyframes fade {
-    from {
+    0% {
       opacity: 0.4;
       transform: scale(110%);
     }
-    to {
+    100% {
       opacity: 1;
       transform: scale(100%);
     }
@@ -75,7 +75,7 @@
   animation: swiped $transition-time forwards;
 
   @keyframes swiped {
-    from {
+    0% {
       transform: scale(100%);
     }
 
@@ -87,7 +87,7 @@
       transform: scale(90%) translateY(-20%);
     }
 
-    to {
+    100% {
       transform: scale(90%) translateY(-20%);
     }
   }
@@ -97,11 +97,10 @@
   animation: appeared $transition-time forwards;
 
   @keyframes appeared {
-    from {
+    0% {
       opacity: 0;
     }
-
-    to {
+    100% {
       opacity: 1;
     }
   }
@@ -113,10 +112,10 @@
   animation: disappear $transition-time forwards;
 
   @keyframes disappear {
-    from {
+    0% {
       opacity: 1;
     }
-    to {
+    100% {
       opacity: 0;
     }
   }
