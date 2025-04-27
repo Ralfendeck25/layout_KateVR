@@ -19,6 +19,7 @@
 
   &__title {
     @extend %h1;
+
     margin-bottom: 15px;
 
     font-size: 21px;
@@ -38,7 +39,7 @@
     }
 
     &::before {
-      content: "Have any questions?";
+      content: 'Have any questions?';
       display: block;
       margin-bottom: 10px;
 

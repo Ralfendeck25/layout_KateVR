@@ -3,8 +3,7 @@
 
   background: $c-background-gradient;
 
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden auto;
 
   z-index: 3;
 
@@ -69,12 +68,14 @@
       position: relative;
       padding: 64px 110px 0;
 
-      background: bottom 140px left url(../images/place-order-image.png) no-repeat;
+      background: bottom 140px left url(../images/place-order-image.png)
+        no-repeat;
     }
 
     @include onLargeDesktop {
       padding-inline: 235px;
-      background: bottom 90px left url(../images/place-order-image-1920.png) no-repeat;
+      background: bottom 90px left url(../images/place-order-image-1920.png)
+        no-repeat;
     }
 
     &--no-background {
@@ -168,7 +169,7 @@
 
       @include onDesktop {
         &::after {
-          content: "";
+          content: '';
           display: inline-block;
           position: absolute;
           top: 100%;

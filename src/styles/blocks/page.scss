@@ -1,7 +1,7 @@
 .page {
   position: relative;
 
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
 
   scroll-behavior: smooth;
 
@@ -14,14 +14,11 @@
 
     &--shadowed {
       @include onTablet {
-        &:after {
+        &::after {
           height: auto;
-          content: "";
+          content: '';
           position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
+          inset: 0;
           background: rgba(0, 0, 0, 0.7);
           z-index: 2;
 
@@ -55,10 +52,7 @@
   &__help,
   &__place-order {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
 
     @extend %animation-appeared;
 

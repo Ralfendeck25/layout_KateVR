@@ -22,7 +22,7 @@
     @include hover(color, $c-white);
 
     &::after {
-      content: "";
+      content: '';
       display: block;
       height: 6px;
       margin-top: 6px;
